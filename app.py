@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(
     app,
     origins=[
-        "https://machine-learning-model-deployment-frontend.onrender.com"
+        "https://machine-learning-model-deployment-frontend.onrender.com/predict"
     ]
 )
 # Load models
