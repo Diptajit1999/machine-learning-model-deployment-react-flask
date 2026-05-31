@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import pandas as pd
 import pickle
 import json
@@ -6,6 +7,7 @@ import os
 
 app = Flask(__name__)
 
+CORS(app)
 # Load models
 models = {
     "knn": pickle.load(open("models/knn_model.pkl", "rb")),
