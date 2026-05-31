@@ -1,0 +1,9 @@
+{
+  "knn": 91.25,
+  "decision_tree": 83.75,
+  "naive_bayes": 93.75,
+  "random_forest": 90.0,
+  "svm": 92.5
+}
+
+
