@@ -7,7 +7,12 @@ import os
 
 app = Flask(__name__)
 
-CORS(app)
+CORS(
+    app,
+    origins=[
+        "https://machine-learning-model-deployment-frontend.onrender.com"
+    ]
+)
 # Load models
 models = {
     "knn": pickle.load(open("models/knn_model.pkl", "rb")),
