@@ -13,7 +13,7 @@ CORS(
         r"/*": {
             "origins": [
                 "http://localhost:3000",
-                "https://your-frontend-domain.onrender.com"
+                "https://ml-deployment-frontend-react.onrender.com"
             ]
         }
     }
