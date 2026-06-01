@@ -9,9 +9,14 @@ app = Flask(__name__)
 
 CORS(
     app,
-    origins=[
-        "https://machine-learning-model-deployment-frontend.onrender.com/predict"
-    ]
+    resources={
+        r"/*": {
+            "origins": [
+                "http://localhost:3000",
+                "https://your-frontend-domain.onrender.com"
+            ]
+        }
+    }
 )
 # Load models
 models = {
